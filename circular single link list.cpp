@@ -10,7 +10,7 @@ struct Buku{
 
 Buku *head, *tail, *cur, *newNode, *del, *after;
 
-//create single linked list
+//create circular single linked list
 void createCircularSingleLinkedList(string dataBaru[3]){
 	head = new Buku();
 	head->judul = dataBaru[0];
@@ -34,7 +34,7 @@ void insertFirst(string data[3]){
 	}
 }
 
-//insert last single linked list
+//insert last circular single linked list
 void insertLast(string data2[3]){
 	if(head == NULL){
 		cout <<"BUat Link List Dulu"<<endl;
@@ -49,7 +49,7 @@ void insertLast(string data2[3]){
 	}
 }
 
-//insert after single linked list
+//insert after circular single linked list
 void insertAfter(string data[3], int posisi){
 	if(head == NULL){
 		cout <<"BUat Link List Dulu"<<endl;
@@ -127,7 +127,7 @@ void deleteAfter(int posisi){
 	}
 }
 
-//print single linked list
+//print circular single linked list
 void printCircular(){
 	if(head == NULL){
 		cout <<"BUat Link List Dulu"<<endl;
