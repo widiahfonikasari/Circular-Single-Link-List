@@ -192,7 +192,7 @@ int main(){
 	cout<<"\n\n"<<endl;
 	
 	cout << "\nSearching judul : Kebumian" << endl;  
-	searchNode(&head, 2);
+	searchNode(&head, 3);
 	
 	return 0;
 
